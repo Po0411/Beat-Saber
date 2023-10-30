@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5443636828197928547}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: red
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -187,13 +187,14 @@ GameObject:
   m_Component:
   - component: {fileID: 5443636828765141534}
   - component: {fileID: 5443636828765141521}
+  - component: {fileID: 6388050017831422316}
   m_Layer: 0
   m_Name: "\uC5C6\uC5B4\uC9C0\uB294 \uBE14\uB7ED"
-  m_TagString: Untagged
+  m_TagString: broken
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5443636828765141534
 Transform:
   m_ObjectHideFlags: 0
@@ -227,6 +228,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &6388050017831422316
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5443636828765141535}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5443636829054126514
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,7 +253,7 @@ GameObject:
   - component: {fileID: 8011977456811866231}
   m_Layer: 0
   m_Name: "\uBE14\uB7ED(\uB808\uB4DC)"
-  m_TagString: red
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -300,7 +314,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5443636829119718176}
   m_LocalRotation: {x: -0, y: -0, z: -0.1006615, w: 0.9949208}
-  m_LocalPosition: {x: -1.164, y: 0, z: -0.18}
+  m_LocalPosition: {x: 0.33399996, y: 0.11500001, z: -0.187}
   m_LocalScale: {x: 0.5, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5443636828765141534}
@@ -398,7 +412,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5443636829202460323}
   m_LocalRotation: {x: -0, y: -0, z: 0.13722624, w: 0.9905398}
-  m_LocalPosition: {x: -1.891, y: 0, z: -0.18}
+  m_LocalPosition: {x: -0.39300004, y: 0.11500001, z: -0.187}
   m_LocalScale: {x: 0.5, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5443636828765141534}
@@ -486,15 +500,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014129045996, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.64
+      value: -0.142
       objectReference: {fileID: 0}
     - target: {fileID: 4000014129045996, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.32
+      value: -0.205
       objectReference: {fileID: 0}
     - target: {fileID: 4000014129045996, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.4
+      value: -0.407
       objectReference: {fileID: 0}
     - target: {fileID: 4000014129045996, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e, type: 3}
       propertyPath: m_LocalRotation.w
