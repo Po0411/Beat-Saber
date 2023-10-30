@@ -5,7 +5,12 @@ using UnityEngine;
 public class sword_st : MonoBehaviour
 {
     public string sword_color;
+    AudioSource audio;
 
+    private void Start()
+    {
+        audio = gameObject.GetComponent<AudioSource>();
+    }
     private void OnTriggerEnter(Collider other)
     {
         switch (sword_color)
@@ -15,8 +20,8 @@ public class sword_st : MonoBehaviour
                     Debug.Log("»¡°­");
                     if (other.CompareTag("red"))//Ä®ÀÇ »ö±ò°ú ³ëÆ®ÀÇ tag°¡ ¼­·Î °°´Ù¸é
                     {
-                        Debug.Log("´ê¾Ò´Ù");
-                        //StartCoroutine(GameManager.Game_Mg.Score_input(true, other.GetComponent<note_st>().input_score));
+                        audio.Play();
+                        StartCoroutine(GameManager.Game_Mg.Score_input(true, other.GetComponent<note_st>().input_score));
                         Destroy(other.gameObject);
                         other.GetComponent<note_st>().broken_obj.SetActive(true);
                     }
@@ -27,8 +32,8 @@ public class sword_st : MonoBehaviour
                     Debug.Log("ÆÄ¶û");
                     if (other.CompareTag("blue"))//Ä®ÀÇ »ö±ò°ú ³ëÆ®ÀÇ tag°¡ ¼­·Î °°´Ù¸é
                     {
-                        Debug.Log("´ê¾Ò´Ù");
-                        //StartCoroutine(GameManager.Game_Mg.Score_input(true, other.GetComponent<note_st>().input_score));
+                        audio.Play();
+                        StartCoroutine(GameManager.Game_Mg.Score_input(true, other.GetComponent<note_st>().input_score));
                         Destroy(other.gameObject);
                         other.GetComponent<note_st>().broken_obj.SetActive(true);
                     }
