@@ -6,14 +6,35 @@ public class sword_st : MonoBehaviour
 {
     public string sword_color;
 
-
     private void OnTriggerEnter(Collider other)
     {
-        if(sword_color==other.tag)//칼의 색깔과 노트의 tag가 서로 같다면
+        switch (sword_color)
         {
-            StartCoroutine(GameManager.Game_Mg.Score_input(true, other.GetComponent<note_st>().input_score));
-            Destroy(other);
-            other.GetComponent<note_st>().broken_obj.SetActive(true);
+            case "red":
+                {
+                    Debug.Log("빨강");
+                    if (other.CompareTag("red"))//칼의 색깔과 노트의 tag가 서로 같다면
+                    {
+                        Debug.Log("닿았다");
+                        //StartCoroutine(GameManager.Game_Mg.Score_input(true, other.GetComponent<note_st>().input_score));
+                        Destroy(other.gameObject);
+                        other.GetComponent<note_st>().broken_obj.SetActive(true);
+                    }
+                }
+                break;
+            case "blue":
+                {
+                    Debug.Log("파랑");
+                    if (other.CompareTag("blue"))//칼의 색깔과 노트의 tag가 서로 같다면
+                    {
+                        Debug.Log("닿았다");
+                        //StartCoroutine(GameManager.Game_Mg.Score_input(true, other.GetComponent<note_st>().input_score));
+                        Destroy(other.gameObject);
+                        other.GetComponent<note_st>().broken_obj.SetActive(true);
+                    }
+                }
+                break;
         }
+       
     }
 }

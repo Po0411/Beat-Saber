@@ -11,10 +11,9 @@ GameObject:
   - component: {fileID: 5443636828197928544}
   - component: {fileID: 5443636828197928549}
   - component: {fileID: 5443636828197928546}
-  - component: {fileID: 5443636828197928547}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: red
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82,19 +81,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &5443636828197928547
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5443636828197928545}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5443636828336142150
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,9 +92,11 @@ GameObject:
   - component: {fileID: 5443636828336142137}
   - component: {fileID: 5443636828336142139}
   - component: {fileID: 5443636828336142136}
+  - component: {fileID: 4964020725629063502}
+  - component: {fileID: 7604117759048710372}
   m_Layer: 0
   m_Name: "\uBE14\uB7ED_1"
-  m_TagString: Untagged
+  m_TagString: red
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -177,6 +165,33 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4964020725629063502
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5443636828336142150}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7604117759048710372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5443636828336142150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77835a9ae27621d4db09120871389ba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  input_score: 1000
+  broken_obj: {fileID: 5443636828765141535}
 --- !u!1 &5443636828765141535
 GameObject:
   m_ObjectHideFlags: 0
