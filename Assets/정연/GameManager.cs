@@ -59,13 +59,13 @@ public class GameManager : MonoBehaviour
 
         if (Score >= 10000)
             result_rating = "Bad";
-        else if (Score >= 20000)
-            result_rating = "Not Bad";
-        else if (Score >= 30000)
-            result_rating = "Good";
-        else if (Score >= 40000)
-            result_rating = "Great";
         else if (Score >= 50000)
+            result_rating = "Not Bad";
+        else if (Score >= 100000)
+            result_rating = "Good";
+        else if (Score >= 150000)
+            result_rating = "Great";
+        else if (Score >= 200000)
             result_rating = "Perfect";
 
         yield return null;
