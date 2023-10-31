@@ -73,7 +73,7 @@ public class GameManager : MonoBehaviour
 
      public IEnumerator Score_input(bool minus_or_plus,int score_index)//스코어를 뺴거나 더하는 코루틴. bool이 참이면 더하기 거짓이면 뺴기.
     {
-        if (minus_or_plus)
+        if (minus_or_plus)//주석
             score += score_index;
         else
             score -= score_index;
