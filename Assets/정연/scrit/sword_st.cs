@@ -39,7 +39,6 @@ public class sword_st : MonoBehaviour
                     }
                 }
                 break;
-        }
-       
+        }   
     }
 }
